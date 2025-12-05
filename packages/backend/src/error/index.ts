@@ -1,5 +1,5 @@
 
-export { BaseError, AppError } from "./BaseError.js";
+export { BaseError, AppError } from "./BaseError";
 export {
   ValidationError,
   NotFoundError,
@@ -10,5 +10,5 @@ export {
   InternalServerError,
   DatabaseError,
   NetworkError,
-} from "./CustomErrors.js";
-export { ErrorHandler, ErrorResponse } from "./ErrorHandler.js";
+} from "./CustomErrors";
+export { ErrorHandler, ErrorResponse } from  "./ErrorHandler"

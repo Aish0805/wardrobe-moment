@@ -1,5 +1,5 @@
-import express from "express";
-import { ErrorHandler } from "./error/index.js";
+import express from 'express'
+import { ErrorHandler } from './error';
 
 export class createHTTPServer {
   app: express.Application;

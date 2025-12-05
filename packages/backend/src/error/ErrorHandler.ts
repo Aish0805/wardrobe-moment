@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { BaseError } from "./BaseError.js";
+import { BaseError } from "./BaseError";
 
 export interface ErrorResponse {
   success: false;

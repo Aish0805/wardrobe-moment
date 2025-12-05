@@ -1,6 +1,7 @@
 import mongoose from 'mongoose'
-import { DatabaseError } from '../error/CustomErrors.js'
-import { CustomEnv } from '../util/configENV.js'
+import { CustomEnv } from '../util/configENV'
+import { DatabaseError } from '../error'
+
 
 class DatabaseConnection{
     constructor(){

@@ -1,4 +1,5 @@
-import { AppError } from "./BaseError.js";
+import { AppError } from "./BaseError";
+
 
 export class ValidationError extends AppError {
   constructor(message: string, public readonly field?: string) {

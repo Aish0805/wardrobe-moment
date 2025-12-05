@@ -1,5 +1,6 @@
-import DatabaseConnection from "./database/connection.js";
-import { createHTTPServer } from "./server.js";
+import DatabaseConnection from "./database/connection";
+import { createHTTPServer } from "./server";
+
 
 new DatabaseConnection()
 const server = new createHTTPServer();
