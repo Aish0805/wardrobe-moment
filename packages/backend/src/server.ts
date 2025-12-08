@@ -1,9 +1,10 @@
-import express from 'express'
-import { AppError, ErrorHandler } from './error';
+import express from "express";
+import { AppError, ErrorHandler } from "./error";
+import { logger } from "./logs";
 
 export class createHTTPServer {
   app: express.Application;
-  
+
   constructor() {
     this.app = express();
     this.setupMiddleware();
@@ -28,13 +29,13 @@ export class createHTTPServer {
 
   start() {
     this.app.listen(3000, () => {
-      console.log("Server is running on http://localhost:3000");
+      logger.info("Server is running on 🚀 http://localhost:3000");
     });
   }
 
   static app() {
     if (!this.app) {
-     throw new AppError('Express app not initialized', 500);
+      throw new AppError("Express app not initialized", 500);
     }
     return this.app;
   }
