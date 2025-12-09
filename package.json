@@ -6,9 +6,12 @@
   "main": "index.js",
   "repository": "https://github.com/Aish0805/wardrobe-moment.git",
   "scripts": {
-    "dev": "pnpm --filter frontend dev && pnpm --filter backend dev"
+    "dev": "concurrently -n FRONTEND,BACKEND -c blue,green \"pnpm --filter frontend dev\" \"pnpm --filter backend dev\""
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
 }
